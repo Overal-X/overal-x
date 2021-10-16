@@ -8,9 +8,8 @@ consistency, using our innovations and support.
 
 Checkout some of our new and existing products that could be of help to your business.
 
-## Moov
-
-Moov helps small and large businesses or individuals move packages between locations in Nigeria. Currently in production, expect a beta release soon.
+- ## Moov
+  Moov helps small and large businesses or individuals move packages between locations in Nigeria. Currently in production, expect a beta release soon.
 
 # Support
 
