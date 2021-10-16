@@ -4,7 +4,11 @@
 Overal X is startup company with alot of new innovations to businesses all around the globe. Our main goal is to help businessess grow with progression and
 consistency, using our innovations and support.
 
-# Project - Moov
+# Projects
+
+Checkout some of our new and existing products that could be of help to your business.
+
+## Moov
 
 Moov helps small and large businesses or individuals move packages between locations in Nigeria. Currently in production, expect a beta release soon.
 
