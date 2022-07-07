@@ -19,8 +19,8 @@ services:
     depends_on:
       - web
     environment:
-      - VIRTUAL_HOST=www.overal-x.com
-      - LETSENCRYPT_HOST=www.overal-x.com
+      - VIRTUAL_HOST=overal-x.com
+      - LETSENCRYPT_HOST=overal-x.com
 
 networks:
   default:
