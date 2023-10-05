@@ -1,0 +1,28 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build Docker images
+        run: |
+          docker-compose build --no-cache --force-rm --parallel
+
+  deploy:
+    runs-on: self-hosted
+
+    needs:
+      - build
+
+    steps:
+      - name: Run Docker images
+        run: |
+          docker-compose up --force-recreate --remove-orphans -d
