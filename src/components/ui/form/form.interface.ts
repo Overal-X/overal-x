@@ -1,4 +1,7 @@
-import { HTMLFormElements } from "@/hooks/form/form.interface";
+export type HTMLFormElements =
+  | HTMLInputElement
+  | HTMLSelectElement
+  | HTMLTextAreaElement;
 
 export interface SelectOptionProps {
   label: string;
