@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <VStack w="full" gap="14">
+    <VStack as="footer" borderTop="1px" w="full" pt="8" gap="14">
       <Stack
         direction={["column", "row"]}
         justifyContent={["center", "space-between"]}

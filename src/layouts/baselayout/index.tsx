@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Box } from "@chakra-ui/react";
 
 import Footer from "@/components/baselayout/footer";
 import Header from "@/components/baselayout/header";
@@ -7,7 +8,9 @@ const BaseLayout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <Box pt="14">
+        <Outlet />
+      </Box>
       <Footer />
     </>
   );
