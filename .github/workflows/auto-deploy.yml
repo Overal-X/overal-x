@@ -31,4 +31,4 @@ jobs:
 
       - name: run new container
         run: |
-          docker run -d --restart unless-stopped --name overal-x -p 6100:3000 overal-x:${{ github.sha }}
+          docker run -d --restart unless-stopped --name overal-x -p 6100:4173 overal-x:${{ github.sha }}
