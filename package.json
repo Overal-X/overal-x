@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/inter": "^5.0.15",
     "@fontsource/lato": "^5.0.17",
+    "classnames": "^2.3.2",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
