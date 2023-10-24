@@ -1,6 +1,6 @@
 import { Box, Center, Image, Stack, Text, VStack } from "@chakra-ui/react";
 
-import hero from "@/assets/hero.png";
+import hero from "@/images/hero.png";
 
 const HomePage = (): JSX.Element => {
   return (
