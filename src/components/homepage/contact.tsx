@@ -1,4 +1,4 @@
-import { Button, Center, HStack, Text } from "@chakra-ui/react";
+import { Button, Center, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 function ContactSection() {
