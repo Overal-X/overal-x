@@ -119,13 +119,7 @@ const ContactPage = () => {
           </VStack>
         </VStack>
 
-        <VStack
-          w="full"
-          p={6}
-          spacing={{ base: 4, sm: 6 }}
-          gridGap={{ base: 4, sm: 6 }}
-          gridTemplateColumns={{ sm: "repeat(2, 1fr)" }}
-        >
+        <VStack w="full" p={6}>
           <FormControl>
             <FormLabel>Full Name</FormLabel>
             <Input
@@ -156,7 +150,7 @@ const ContactPage = () => {
             />
           </FormControl>
           <Button
-            className="sm:col-span-2 justify-center"
+            colorScheme="blue"
             rightIcon={<ArrowForwardIcon />}
             isLoading={sendContactMessage.isLoading}
             onClick={handleSubmit}
