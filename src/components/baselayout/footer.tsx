@@ -60,15 +60,15 @@ function Footer() {
                 { name: "Contact Us", url: "/" },
               ],
             },
-          ].map((link) => (
-            <VStack>
+          ].map((link, i) => (
+            <VStack key={i}>
               <Heading size="md" fontWeight="normal">
                 {link.heading}
               </Heading>
 
               <List color="GrayText">
-                {link.list.map((list) => (
-                  <ListItem>
+                {link.list.map((list, i) => (
+                  <ListItem key={i}>
                     <ALink as={Link} to={list.url}>
                       {list.name}
                     </ALink>
