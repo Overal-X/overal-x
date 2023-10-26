@@ -4,7 +4,7 @@ import { features } from "@/store/homepage";
 
 function FeaturesSection() {
   return (
-    <Stack px={["8", "20"]} direction={["column", "row"]}>
+    <Stack as="section" px={["8", "20"]} direction={["column", "row"]}>
       {features.map((item) => (
         <HStack alignItems="center">
           <Center bg={item.icon.color} p={"6"} rounded="full">

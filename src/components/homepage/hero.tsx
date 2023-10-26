@@ -4,7 +4,7 @@ import hero from "@/images/hero.png";
 
 function HeroSection() {
   return (
-    <Center w="full" px={["8", "20"]} py="10">
+    <Center as="section" w="full" px={["8", "20"]} py="10">
       <Stack direction={["column-reverse", "row"]}>
         <VStack w="full" alignItems="center" justifyContent="center">
           <Text fontSize={["2xl", "5xl"]} fontWeight="medium">

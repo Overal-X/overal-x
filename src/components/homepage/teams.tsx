@@ -1,15 +1,16 @@
-import { VStack, Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import SpeedIcon from "../icons/speed";
-import { services } from "@/store/homepage";
+import { Heading, Image, Stack, Text, VStack } from "@chakra-ui/react";
 
-function ServicesSection() {
+import { teams } from "@/store/homepage";
+
+function TeamSection() {
   return (
     <VStack
+      as="section"
       alignItems="center"
       justifyContent="center"
       py="10"
       px="8"
-      my="4"
+      mt="4"
       bg="blackAlpha.100"
     >
       <Heading
@@ -20,7 +21,7 @@ function ServicesSection() {
         textAlign="center"
         maxW="lg"
       >
-        We offer the best quality service for you
+        Meet with our creative dedicated team
       </Heading>
       <Text textAlign="center" maxW="2xl" color="blackAlpha.700">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
@@ -28,23 +29,29 @@ function ServicesSection() {
         Quibusdam, minus veritatis.
       </Text>
 
-      <SimpleGrid columns={[1, 3]} spacing={10} px={["4", "14"]} py="10">
-        {services.map((item) => (
-          <VStack placeItems="start" bg="white" p="6" rounded="lg">
-            <SpeedIcon color="rgb(0, 0, 234)" size={40} />
-            <Text fontSize="2xl">{item.title}</Text>
+      <Stack
+        direction={["column", "row"]}
+        w="full"
+        justifyContent="space-between"
+        px={["4", "14"]}
+        py="10"
+      >
+        {teams.map((item) => (
+          <VStack placeItems="center">
+            <Image src={item.image} w={350} h={350} rounded="lg" shadow="md" />
+            <Text fontSize="2xl">{item.name}</Text>
             <Text
               color="blackAlpha.700"
               fontSize="sm"
               textTransform="capitalize"
             >
-              {item.description}
+              {item.title}
             </Text>
           </VStack>
         ))}
-      </SimpleGrid>
+      </Stack>
     </VStack>
   );
 }
 
-export default ServicesSection;
+export default TeamSection;
