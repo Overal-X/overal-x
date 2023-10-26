@@ -1,21 +1,21 @@
 import Footer from "@/components/baselayout/footer";
 import Header from "@/components/baselayout/header";
+import { Box, Code, Text } from "@chakra-ui/react";
 
 const ErrorPage = () => {
   return (
     <>
       <Header />
-      <main className="p-4 text-center">
-        <p>This page cannot be found.</p>
-        <p className="mb-4">
+      <Box>
+        <Text fontSize="xl">This page cannot be found.</Text>
+        <Text>
           Check if you have added the route or the route link is correct
-        </p>
+        </Text>
 
-        <p>
-          you can edit this error page in{" "}
-          <code className="bg-[#ccc] p-1 rounded-md">pages/error</code>
-        </p>
-      </main>
+        <Text>
+          you can edit this error page in <Code>pages/error</Code>
+        </Text>
+      </Box>
       <Footer />
     </>
   );
