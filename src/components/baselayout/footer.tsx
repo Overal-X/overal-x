@@ -1,18 +1,21 @@
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import {
-  HStack,
   Link as ALink,
-  Text,
-  VStack,
+  HStack,
   Heading,
-  List,
-  ListItem,
+  Image,
   Input,
   InputGroup,
   InputRightElement,
+  List,
+  ListItem,
   Stack,
+  Text,
+  VStack,
 } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
+
+import logo from "@/images/full-logo.jpg";
 
 function Footer() {
   return (
@@ -20,16 +23,11 @@ function Footer() {
       <Stack
         direction={["column", "row"]}
         justifyContent={["center", "space-between"]}
+        alignItems="center"
         w="full"
         px="12"
       >
-        <VStack w={["full", "56"]} textAlign="left">
-          <Heading>Overal X</Heading>
-          <Text textAlign="center" color="GrayText">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-            voluptates.
-          </Text>
-        </VStack>
+        <Image src={logo} w={["80%", "56"]} h="44" />
 
         <Stack direction={["column", "row"]} gap={["6", "14"]}>
           {[
