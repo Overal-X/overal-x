@@ -30,7 +30,7 @@ function ServicesSection() {
 
       <SimpleGrid columns={[1, 3]} spacing={10} px={["4", "14"]} py="10">
         {services.map((item) => (
-          <VStack placeItems="start">
+          <VStack placeItems="start" bg="white" p="6" rounded="lg">
             <SpeedIcon color="rgb(0, 0, 234)" size={40} />
             <Text fontSize="2xl">{item.title}</Text>
             <Text
