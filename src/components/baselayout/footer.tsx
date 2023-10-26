@@ -35,20 +35,30 @@ function Footer() {
           {[
             {
               heading: "Quick Links",
-              list: ["Home", "Product", "Careers", "Pricing"],
+              list: [
+                { name: "Home", url: "/" },
+                { name: "About", url: "/about" },
+                { name: "Contact", url: "/contact" },
+                { name: "Privacy Policy", url: "/privacy-policy" },
+              ],
             },
             {
               heading: "Services",
               list: [
-                "Web Development",
-                "Graphics Design",
-                "Digital Marketing",
-                "Ui/Ux Design",
+                { name: "Software Development", url: "/" },
+                { name: "Graphics Design", url: "/" },
+                { name: "Cloud Infastructure", url: "/" },
+                { name: "Ui/Ux Design", url: "/" },
               ],
             },
             {
               heading: "Support",
-              list: ["Company", "Press media", "Our Blog", "Contact Us"],
+              list: [
+                { name: "Company", url: "/" },
+                { name: "Press media", url: "/" },
+                { name: "Our Blog", url: "/" },
+                { name: "Contact Us", url: "/" },
+              ],
             },
           ].map((link) => (
             <VStack>
@@ -59,8 +69,8 @@ function Footer() {
               <List color="GrayText">
                 {link.list.map((list) => (
                   <ListItem>
-                    <ALink as={Link} to="/">
-                      {list}
+                    <ALink as={Link} to={list.url}>
+                      {list.name}
                     </ALink>
                   </ListItem>
                 ))}

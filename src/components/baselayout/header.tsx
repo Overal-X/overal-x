@@ -39,9 +39,6 @@ function Header() {
         <ALink as={Link} to="/contact">
           Contact
         </ALink>
-        <ALink as={Link} to="/support">
-          Support
-        </ALink>
       </HStack>
     </HStack>
   );
