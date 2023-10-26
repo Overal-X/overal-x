@@ -24,9 +24,9 @@ function TeamSection() {
         Meet with our creative dedicated team
       </Heading>
       <Text textAlign="center" maxW="2xl" color="blackAlpha.700">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-        necessitatibus. Sit voluptates sint reprehenderit, ad recusandae in.
-        Quibusdam, minus veritatis.
+        Meet our passionate team of professionals, each bringing unique
+        expertise and dedication to deliver the best solutions for our clients
+        worldwide.
       </Text>
 
       <Stack

@@ -82,8 +82,8 @@ const ContactPage = () => {
             Contact Us
           </Text>
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            dignissimos, fugiat maiores non facere error recusandae.
+            If you have any questions or inquiries, please don't hesitate to
+            reach out to us.
           </Text>
 
           <VStack gap={2} alignItems="flex-start">
@@ -95,12 +95,12 @@ const ContactPage = () => {
               },
               {
                 title: "Call us",
-                value: "Ring us on +234 814 3740 522",
+                value: "Ring us on +234 81 6991 9049",
                 icon: <PhoneIcon fontSize="2xl" />,
               },
               {
                 title: "Our office",
-                value: "4A5E6 Souillet Ferry Los Laskerville, CP 9210",
+                value: "Ibadan, Oyo State, Nigeria",
                 icon: <CalendarIcon fontSize="2xl" />,
               },
             ].map((item, i) => (
@@ -160,7 +160,7 @@ const ContactPage = () => {
         </VStack>
       </Center>
 
-      <section className="space-y-8">
+      <Box display="none">
         <Text
           fontSize="2xl"
           color="primary"
@@ -186,7 +186,7 @@ const ContactPage = () => {
             ))}
           </Accordion>
         </VStack>
-      </section>
+      </Box>
     </VStack>
   );
 };

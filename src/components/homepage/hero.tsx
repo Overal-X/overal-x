@@ -8,12 +8,12 @@ function HeroSection() {
       <Stack direction={["column-reverse", "row"]}>
         <VStack w="full" alignItems="center" justifyContent="center">
           <Text fontSize={["2xl", "5xl"]} fontWeight="medium">
-            We specialize in UI/UX, Web Development, Digital Marketing
+            Enterprise Solution Provider
           </Text>
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt
-            reiciendis hic laudantium dolor culpa voluptate ullam! Ratione
-            provident excepturi deleniti architecto id reprehenderit.
+            In challenging the notion of scarcity, we unveil the potential for a
+            life where abundance flourishes in the balance of our desires and
+            realities.
           </Text>
         </VStack>
 

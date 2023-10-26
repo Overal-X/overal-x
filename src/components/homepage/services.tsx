@@ -1,6 +1,5 @@
-import { VStack, Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import SpeedIcon from "../icons/speed";
 import { services } from "@/store/homepage";
+import { Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 
 function ServicesSection() {
   return (
@@ -24,15 +23,15 @@ function ServicesSection() {
         We offer the best quality service for you
       </Heading>
       <Text textAlign="center" maxW="2xl" color="blackAlpha.700">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-        necessitatibus. Sit voluptates sint reprehenderit, ad recusandae in.
-        Quibusdam, minus veritatis.
+        We are committed to providing unparalleled service quality tailored
+        specifically to your needs. Our dedication ensures your satisfaction and
+        success in every endeavor.
       </Text>
 
       <SimpleGrid columns={[1, 3]} spacing={10} px={["4", "14"]} py="10">
         {services.map((item) => (
           <VStack placeItems="start" bg="white" p="6" rounded="lg">
-            <SpeedIcon color="rgb(0, 0, 234)" size={40} />
+            <item.icon color="rgb(0, 0, 234)" size={40} />
             <Text fontSize="2xl">{item.title}</Text>
             <Text
               color="blackAlpha.700"
